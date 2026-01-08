@@ -17,7 +17,7 @@ namespace WebApplication2.Controllers
         {
             if (!ModelState.IsValid)
             {
-                ViewBag.Title = "Create Student";
+                ViewBag.Title = "Register a new Student";
                 ViewBag.Hint = "There is a wrong data";
                 return View(model);
             }
