@@ -1,0 +1,43 @@
+﻿@model WebApplication2.Models.StudentCreateVm
+@{
+    Layout = "_Layout";
+}
+<div class="card">
+   <h2>@ViewBag.Title</h2>
+   <p>@ViewBag.Hint</p>
+
+   <form asp-action="Create" method="post">
+      <div asp-validation-summary="ModelOnly" class="validation-summary"></div>
+       <div class="form-element">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name" class="validation-item"></span>
+       </div>
+
+        <div class="form-element">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+            <span asp-validation-for="Email" class="validation-item"></span>
+        </div>
+
+        <div class="form-element">
+        <label asp-for="DateOfBirth"></label>
+        <input asp-for="DateOfBirth" type="date" min="1990-01-01" />
+            <span asp-validation-for="DateOfBirth" class="validation-item"></span>
+        </div>
+
+        <div class="form-element">
+          <label>
+            <input asp-for="IsActive" /> Active
+          </label>
+       </div>
+
+      <div class="button-group">
+          <button type="submit" class="btn-submit">Submit</button>
+          <button> Cancel</button>
+      </div>
+  </form>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

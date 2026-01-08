@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <BaseOutputPath>D:\visualstudio-workspace\WebApplication2\WebApplication2\bin\Debug\net10.0</BaseOutputPath>
+  </PropertyGroup>
+
+</Project>

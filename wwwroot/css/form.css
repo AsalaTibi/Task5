@@ -1,0 +1,65 @@
+﻿body {
+    background-color: blanchedalmond;
+    font-family: Arial;
+}
+.card {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+    width: 500px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    display: flex;
+    margin: 50px auto;
+    padding: 30px;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+.form-element {
+    margin-bottom: 20px;
+}
+input:not([type="checkbox"]) {
+    width: 100%;
+    box-sizing: border-box;
+}
+    input:not([type="checkbox"]):focus {
+        box-shadow: 0 10px 5px blanchedalmond;
+    }
+.button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content:center;
+}
+@media(max-width:600px){
+    .card{
+        width:90%;
+        padding:15px;
+        margin:20px;
+    }
+    .button-group {
+        flex-direction: column;
+    }
+}
+button {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: blanchedalmond;
+    border: none;
+    cursor: pointer;
+}
+.btn-submit:hover {
+    background-color: green;
+}
+.validation-item {
+    color: red;
+    margin-top: 4px;
+    font-size:15px;
+}
+.validation-summary {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
