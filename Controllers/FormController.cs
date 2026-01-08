@@ -8,7 +8,7 @@ namespace WebApplication2.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            ViewBag.Title = " Create Student";
+            ViewBag.Title = "Register a new Student";
             ViewBag.Hint = "Please fill all the requirements";
             return View(new StudentCreateVm());
         }
@@ -17,7 +17,7 @@ namespace WebApplication2.Controllers
         {
             if (!ModelState.IsValid)
             {
-                ViewBag.Title = "Register a new Student";
+                ViewBag.Title = "Create Student";
                 ViewBag.Hint = "There is a wrong data";
                 return View(model);
             }
