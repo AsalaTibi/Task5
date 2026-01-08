@@ -8,7 +8,7 @@ namespace WebApplication2.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            ViewBag.Title = "Welcome to the Student Create Page";
+            ViewBag.Title = "Welcome back";
             ViewBag.Hint = "Please fill all the requirements";
             return View(new StudentCreateVm());
         }
