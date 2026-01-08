@@ -21,7 +21,7 @@ namespace WebApplication2.Controllers
                 ViewBag.Hint = "There is a wrong data";
                 return View(model);
             }
-            TempData["Success"] = "Student saved successfully";
+            TempData["Success"] = "Create Student";
             return RedirectToAction(nameof(Success),model);
         }
         [HttpGet]
