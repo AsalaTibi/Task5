@@ -8,7 +8,7 @@ namespace WebApplication2.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            ViewBag.Title = " Create Student";
+            ViewBag.Title = "Welcome to the Student Create Page";
             ViewBag.Hint = "Please fill all the requirements";
             return View(new StudentCreateVm());
         }
@@ -17,11 +17,11 @@ namespace WebApplication2.Controllers
         {
             if (!ModelState.IsValid)
             {
-                ViewBag.Title = "Welcome to the Student Create Page";
+                ViewBag.Title = "Create Student";
                 ViewBag.Hint = "There is a wrong data";
                 return View(model);
             }
-            TempData["Success"] = "Student saved successfully";
+            TempData["Success"] = "Create Student";
             return RedirectToAction(nameof(Success),model);
         }
         [HttpGet]
